@@ -1,0 +1,29 @@
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 20px;
+}
+.theme {
+  background-color: #ff9900;
+}
+.largerFont {
+  font-size: 40px;
+}
+.buttonColor {
+  color: #000000 !important;
+}
+
+.fontPrefs {
+  color: #000000 !important;
+  font-family: "Cairo", "Arial";
+}
+
+.darkerBG {
+  background-color: #808080;
+}
+
+.lighter-button {
+  background-color: #b3b3b3;
+}
+
