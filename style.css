@@ -1,15 +1,19 @@
 h1 {
   font-size: 30px;
 }
+
 h2 {
   font-size: 20px;
 }
+
 .theme {
   background-color: #ff9900;
 }
+
 .largerFont {
   font-size: 40px;
 }
+
 .buttonColor {
   color: #000000 !important;
 }
@@ -31,3 +35,49 @@ h2 {
   text-align: left;
 }
 
+.mdl-layout__drawer {
+  border: 0;
+}
+
+#myMenu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#myMenu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#myMenu li a{
+	text-decoration:none;
+	color: #000;
+}
+#myMenu li.active a:hover{
+	color: #000;
+}
+#myMenu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#myMenu li a,
+#myMenu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#myMenu li.active a{
+	color: #fff;
+}
+#myMenu{
+	position:fixed;
+	bottom: 3%;
+	left: 40%;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}

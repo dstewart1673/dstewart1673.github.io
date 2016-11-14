@@ -6,84 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio MDL</title>
 
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cairo'>
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
     <link rel='stylesheet prefetch' href='https://code.getmdl.io/1.1.3/material.indigo-pink.min.css'>
-    <script
-			  src="https://code.jquery.com/jquery-3.1.0.min.js"
-			  integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
-			  crossorigin="anonymous"></script>
-
-    <style>
-      h1 {
-        font-size: 30px;
-      }
-      h2 {
-        font-size: 20px;
-      }
-      .theme {
-        background-color: #ff9900;
-      }
-      .largerFont {
-        font-size: 40px;
-      }
-      .buttonColor {
-        color: #000000 !important;
-      }
-      .fontPrefs {
-        color: #000000 !important;
-        font-family: "Cairo", "Arial";
-      }
-      .darkerBG {
-        background-color: #808080;
-      }
-      .lighter-button {
-        background-color: #b3b3b3;
-      }
-      .mdl-layout__drawer {
-        border: 0;
-      }
-    </style>
-
-
-
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel='stylesheet' type='text/css' href='jquery.pagepiling.css' />
+    <script src='jquery-3.1.1.min.js';></script>
+    <script type='text/javascript' src='jquery.pagepiling.js'></script>
+    <script type='text/javascript' src='script.js'></script>
   </head>
 
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-
-      <header class="mdl-layout__header theme">
-        <div class="mdl-layout__header-row">
-          <div class="mdl-layout-spacer">
-          </div>
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onClick="parent.location='https://codepen.io/djs113/#'" id="codePen">
-            <i class="fa fa-codepen buttonColor"></i>
-          </button>
-          <span class="mdl-tooltip" for="codePen">CodePen</span>
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onClick="parent.location='http://www.linkedin.com/in/danielstewart113'" id="linkedIn">
-            <i class="fa fa-linkedin buttonColor"></i>
-          </button>
-          <span class="mdl-tooltip" for="linkedIn">
-            LinkedIn
-          </span>
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect" onClick="parent.location='https://github.com/dstewart1673'" id="GitHub">
-            <i class="fa fa-github buttonColor"></i>
-          </button>
-          <span class="mdl-tooltip" for="GitHub">
-            GitHub
-          </span>
-        </div>
-      </header>
-      <div class="mdl-layout__drawer darkerBG">
-        <span class="mdl-layout-title fontPrefs largerFont">Hello!</span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link fontPrefs lighter-button" href="http://www.google.com">About Me</a>
-          <a class="mdl-navigation__link fontPrefs" href="">Projects</a>
-          <a class="mdl-navigation__link fontPrefs lighter-button" href="">Contact Me</a>
-        </nav>
+    <div id='pagepiling'>
+      <div class='section'>
+        <p>
+          About Me Goes Here
+        </p>
       </div>
+<<<<<<< Updated upstream
       <main class="mdl-layout__content">
         <div class="page-content mdl-grid">
           <div class="mdl-cell mdl-cell--11-col-desktop mdl-cell--4-col-phone mdl-card mdl-shadow--4dp" id="aboutMe">
@@ -110,8 +51,26 @@
             </div>
           </div>
 
+=======
+      <div class='section'>
+        <div id="tester">
+          <p>
+            Projects go here
+          </p>
+>>>>>>> Stashed changes
         </div>
-      </main>
+      </div>
+      <div class='section'>
+        <p>
+          contact information goes here
+        </p>
+      </div>
     </div>
+    <ul id="myMenu">
+      <li data-menuanchor="aboutMe" class="active"><a href="#aboutMe">About Me</a></li>
+      <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
+      <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+    </ul>
   </body>
+
 </html>
