@@ -1,25 +1,16 @@
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 20px;
-}
-
 .theme {
   background-color: #ff9900;
 }
 
-.largerFont {
-  font-size: 40px;
+.text-center {
+  text-align: center;
 }
 
 .buttonColor {
   color: #000000 !important;
 }
 
-.fontPrefs {
-  color: #000000 !important;
+body {
   font-family: "Cairo", "Arial";
 }
 
@@ -29,14 +20,6 @@ h2 {
 
 .lighter-button {
   background-color: #b3b3b3;
-}
-
-.section-head {
-  text-align: left;
-}
-
-.mdl-layout__drawer {
-  border: 0;
 }
 
 #myMenu li {

@@ -4,26 +4,41 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio MDL</title>
+    <title>Porfolio.Doc</title>
 
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cairo'>
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel='stylesheet prefetch' href='https://code.getmdl.io/1.1.3/material.indigo-pink.min.css'>
+    <link rel="stylesheet prefetch" href="https://code.getmdl.io/1.2.1/material.grey-orange.min.css">
     <link rel='stylesheet' type='text/css' href='style.css'>
     <link rel='stylesheet' type='text/css' href='jquery.pagepiling.css' />
     <script type='text/javascript' src='jquery-3.1.1.min.js'></script>
     <script type='text/javascript' src='jquery.pagepiling.js'></script>
     <script type='text/javascript' src='script.js'></script>
+    <script defer type="text/javascript" src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </head>
 
 <body>
     <div id='pagepiling'>
         <div class='section'>
-            <h1>Hello World!</h1>
-            <p>
-                About Me Goes Here... Or does it?
-            </p>
+            <div class="mdl-grid">
+              <div class="mdl-layout-spacer">
+              </div>
+              <div class="mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-desktop text-center">
+                <h1>Hello World!</h1>
+              </div>
+              <div class="mdl-layout-spacer">
+              </div>
+              <div class="mdl-layout-spacer">
+
+              </div>
+              <div class="mdl-cell mdl-cell--12-col-phone mdl-cell--7-col-desktop">
+                <p>
+                    Hi, I'm Dan, a junior web developer from the rainy city.  Scroll down to see some examples of my work.  Feel free to contact me with any questions!
+                </p>
+              </div>
+            </div>
+
         </div>
         <div class='section'>
             <div id="tester">
@@ -39,9 +54,9 @@
         </div>
     </div>
     <ul id="myMenu">
-        <li data-menuanchor="aboutMe" class="active"><a href="#aboutMe">About Me</a></li>
-        <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
-        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+        <li data-menuanchor="aboutMe" class="active mdl-chip"><a href="#aboutMe">About Me</a></li>
+        <li data-menuanchor="projects" class="mdl-chip"><a href="#projects">Projects</a></li>
+        <li data-menuanchor="contact" class="mdl-chip"><a href="#contact">Contact</a></li>
     </ul>
 </body>
 
