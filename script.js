@@ -4,6 +4,7 @@ $(document).ready(function() {
     verticalCentered: true,
     sectionsColor: ['#ffffff', '#4EFFEF', "#ffffff"],
     anchors: ["aboutMe", "projects", "contact"],
-    menu: '#myMenu'
+    menu: '#myMenu',
+    navigation: false
   });
 });
