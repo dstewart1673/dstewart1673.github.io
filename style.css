@@ -6,8 +6,8 @@
   text-align: center;
 }
 
-.buttonColor {
-  color: #000000 !important;
+h1 {
+  font-family: "Cairo", "Arial";
 }
 
 body {
@@ -24,6 +24,7 @@ body {
 
 #myMenu li {
 	display:inline-block;
+  text-align: center;
 	margin: 10px;
 	color: #000;
 	background:#fff;
@@ -57,10 +58,12 @@ body {
 #myMenu{
 	position:fixed;
 	bottom: 3%;
-	left: 40%;
 	height: 40px;
 	z-index: 70;
 	width: 100%;
 	padding: 0;
 	margin:0;
+}
+.card-twitch .mdl-card__title {
+  background: url("/images/Twitch.tiff") center/cover;
 }
