@@ -64,3 +64,7 @@ body {
 	padding: 0;
 	margin:0;
 }
+
+.img-test {
+  background-image: url("../images/twitch.png");
+}
