@@ -68,6 +68,7 @@ body {
 .mdl-card__media img{
   width: 95%;
   height: auto;
+  max-height: 170px;
   margin: 20px 20px 20px 20px;
 }
 
@@ -75,4 +76,8 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: center;
+}
+
+.projectsPage {
+  padding-bottom: 50px;
 }
