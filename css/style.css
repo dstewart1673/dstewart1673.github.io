@@ -63,12 +63,16 @@ body {
 	width: 100%;
 	padding: 0;
 	margin:0;
-}.mdl-card__media img{
-  height: 150px;
+}
+
+.mdl-card__media img{
+  width: 95%;
+  height: auto;
   margin: 20px 20px 20px 20px;
 }
 
 .container {
+  overflow: hidden;
   display: flex;
   justify-content: center;
 }
