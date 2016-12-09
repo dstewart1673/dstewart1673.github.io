@@ -72,7 +72,7 @@ body {
 }
 
 .container {
-  overflow: hidden;
+  overflow: none;
   display: flex;
   justify-content: center;
 }
