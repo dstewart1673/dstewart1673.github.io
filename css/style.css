@@ -1,83 +1,155 @@
 .theme {
-  background-color: #ff9900;
+    background-color: #ff9900;
 }
 
 .text-center {
-  text-align: center;
+    text-align: justify;
 }
 
-h1 {
-  font-family: "Cairo", "Arial";
+.main-title {
+    font-size: 70px;
 }
 
-body {
-  font-family: "Cairo", "Arial";
+.text-theme {
+    font-family: "Cairo", "Arial";
 }
 
-.darkerBG {
-  background-color: #808080;
+a {
+    font-family: "Cairo", "Arial";
+    font-weight: lighter;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
-.lighter-button {
-  background-color: #b3b3b3;
+.main-text {
+    font-size: 1.5em;
 }
 
-#myMenu li {
-	display:inline-block;
-  text-align: center;
-	margin: 10px;
-	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-#myMenu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
-}
-#myMenu li a{
-	text-decoration:none;
-	color: #000;
-}
-#myMenu li.active a:hover{
-	color: #000;
-}
-#myMenu li:hover{
-	background: rgba(255,255,255, 0.8);
-}
-#myMenu li a,
-#myMenu li.active a{
-	padding: 9px 18px;
-	display:block;
-}
-#myMenu li.active a{
-	color: #fff;
-}
-#myMenu{
-	position:fixed;
-	bottom: 3%;
-	height: 40px;
-	z-index: 70;
-	width: 100%;
-	padding: 0;
-	margin:0;
-}
-
-.mdl-card__media img{
-  width: 95%;
-  height: auto;
-  max-height: 170px;
-  margin: 20px 20px 20px 20px;
-}
-
-.container {
-  overflow: hidden;
+.about-me-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.projectsPage {
-  margin-bottom: 10px;
+.text-link {
+    color: #000;
+}
+
+.darkerBG {
+    background-color: #808080;
+}
+
+.lighter-button {
+    background-color: #b3b3b3;
+}
+
+#myMenu li {
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#myMenu li.active {
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+#myMenu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#myMenu li.active a:hover {
+    color: #000;
+}
+
+#myMenu li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#myMenu li a, #myMenu li.active a {
+    padding: 9px 18px;
+    display: block;
+}
+
+#myMenu li.active a {
+    color: #fff;
+}
+
+#myMenu {
+    position: fixed;
+    bottom: 3%;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+}
+
+.mdl-card__media img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.mdl-card__media a {
+  width: 100%;
+  height: auto;
+}
+
+.img-link {
+  width: 95%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.to-fit {
+    height: 200px;
+}
+
+.top-fit {
+    height: 80px;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;;
+}
+
+.mdl-card__supporting-text {
+  padding-top: 0px;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.profile-pic {
+  max-width: 160px;
+  height: auto;
+  border-radius: 50%;
 }

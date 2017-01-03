@@ -16,16 +16,42 @@
     <script type='text/javascript' src='js/jquery.pagepiling.js'></script>
     <script type='text/javascript' src='js/script.js'></script>
     <script defer type="text/javascript" src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script type="text/javascript" src="js/typed.js"></script>
 </head>
 
 <body>
-    <div id='pagepiling'>
+    <div class="topbar darkerBG mdl-shadow--6dp">
+      <div class="learning text-theme">
+      </div>
+      <div class="social  text-theme">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="codePen">
+          <a href="https://codepen.io/djs113/#"><i class="fa fa-codepen buttonColor"></i></a>
+        </button>
+        <span class="mdl-tooltip" for="codePen">
+          CodePen
+        </span>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="linkedIn">
+          <a href="www.linkedin.com/in/danielstewart113"><i class="fa fa-linkedin buttonColor"></i></a>
+        </button>
+        <span class="mdl-tooltip" for="linkedIn">
+          LinkedIn
+        </span>
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="GitHub">
+          <a href="https://github.com/dstewart1673"><i class="fa fa-github buttonColor"></i></a>
+        </button>
+        <span class="mdl-tooltip" for="GitHub">
+          GitHub
+        </span>
+      </div>
+    </div>
+
+    <div id='pagepiling' class="text-theme">
         <div class='section'>
             <div class="mdl-grid">
                 <div class="mdl-layout-spacer">
                 </div>
-                <div class="mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-desktop text-center">
-                    <h1>Hello World!</h1>
+                <div class="mdl-cell mdl-cell--12-col-phone mdl-cell--8-col-desktop text-center">
+                    <h1 class="main-title text-theme"><span class="hello"></span></h1>
                 </div>
                 <div class="mdl-layout-spacer">
                 </div>
@@ -33,9 +59,12 @@
             <div class="mdl-grid">
                 <div class="mdl-layout-spacer">
                 </div>
-                <div class="mdl-cell mdl-cell--12-col-phone mdl-cell--5-col-desktop text-center">
-                    <p>
-                        Hi, I'm Dan, a junior web developer from the rainy city. Scroll down to see some examples of my work. Feel free to contact me with any questions!
+                <div class="mdl-cell mdl-cell--12-col-phone mdl-cell--2-col-desktop">
+                  <img class="profile-pic" src="images/profile.png">
+                </div>
+                <div class="mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-desktop text-center about-me-text">
+                    <p class="main-text">
+                        Hi, I'm Dan, a junior web developer from the rainy city versed in HTML, CSS, Javascript, and Sass, as well as Bootstrap and other front-end frameworks. Currently learning React! Scroll down to see some examples of my work. Feel free to contact me with any questions!
                     </p>
                 </div>
                 <div class="mdl-layout-spacer">
@@ -43,89 +72,44 @@
             </div>
         </div>
         <div class='section pp-scrollable container'>
-            <div class="mdl-grid projectsPage">
-                <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop">
-                  <div class="mdl-card__media container">
-                    <img src="images/twitch.png" alt="" />
-                  </div>
-                  <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Twitch Watchman</h2>
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                      Uses Twitch.tv's API to deliver the status of popular and user-specified streamers.
-                  </div>
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col top-fit text-center">
+                    <h2 class="text-theme">Some examples of my work:</h2>
                 </div>
-                <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop">
-                  <div class="mdl-card__media container">
-                    <img src="images/twitch.png" alt="" />
-
-                  </div>
-                  <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Twitch Watchman</h2>
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                      Uses Twitch.tv's API to deliver the status of popular and user-specified streamers.
-                  </div>
+                <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop mdl-shadow--2dp">
+                    <div class="mdl-card__media container">
+                        <a href="http://codepen.io/djs113/pen/oYxZLa/" target="_blank"><img src="images/twitch.png" alt="" /></a>
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text"><a href="http://codepen.io/djs113/pen/oYxZLa/" target="_blank" class="text-link">Twitch Watchman</a></h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Uses Twitch.tv's API to deliver the status of popular and user-specified streamers.
+                    </div>
                 </div>
-                <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop">
-                  <div class="mdl-card__media container">
-                    <img src="images/twitch.png" alt="" />
-
-                  </div>
-                  <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Twitch Watchman</h2>
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                      Uses Twitch.tv's API to deliver the status of popular and user-specified streamers.
-                  </div>
+                <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop mdl-shadow--2dp">
+                    <div class="mdl-card__media container">
+                        <a href="http://codepen.io/djs113/pen/EyZEKE" target="_blank"><img src="images/Weather_Near_You.png" alt="" /></a>
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text"><a href="http://codepen.io/djs113/pen/EyZEKE/" target="_blank" class="text-link">Weather Near You</a></h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Uses the OpenWeatheMap API to deliver current conditions at the user's location.
+                    </div>
                 </div>
-                <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop">
-                  <div class="mdl-card__media container">
-                    <img src="images/twitch.png" alt="" />
-
-                  </div>
-                  <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Twitch Watchman</h2>
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                      Uses Twitch.tv's API to deliver the status of popular and user-specified streamers.
-                  </div>
+                <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop mdl-shadow--2dp">
+                    <div class="mdl-card__media container">
+                        <a href="http://codepen.io/djs113/pen/WxrkvO" target="_blank"><img src="images/Das_Quote_Maschine.png" alt="" /></a>
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text"><a href="http://codepen.io/djs113/pen/WxrkvO" target="_blank" class="text-link">Das Quote Maschine</a></h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Delivers a random quote and allows the user to tweet it.
+                    </div>
                 </div>
-                <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop">
-                  <div class="mdl-card__media container">
-                    <img src="images/twitch.png" alt="" />
-
-                  </div>
-                  <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Twitch Watchman</h2>
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                      Uses Twitch.tv's API to deliver the status of popular and user-specified streamers.
-                  </div>
-                </div>
-                <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop">
-                  <div class="mdl-card__media container">
-                    <img src="images/twitch.png" alt="" />
-
-                  </div>
-                  <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Twitch Watchman</h2>
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                      Uses Twitch.tv's API to deliver the status of popular and user-specified streamers.
-                  </div>
-                </div>
-                <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop">
-                  <div class="mdl-card__media container">
-                    <img src="images/twitch.png" alt="" />
-
-                  </div>
-                  <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">Twitch Watchman</h2>
-                  </div>
-                  <div class="mdl-card__supporting-text">
-                      Uses Twitch.tv's API to deliver the status of popular and user-specified streamers.
-                  </div>
+                <div class="mdl-cell mdl-cell--12-col to-fit">
                 </div>
             </div>
         </div>
@@ -138,7 +122,7 @@
     <div class="mdl-grid">
         <div class="mdl-layout-spacer">
         </div>
-        <div class="mdl-cell mdl-cell--10-col-phone mdl-cell--3-col-desktop">
+        <div class="mdl-cell mdl-cell--3-col text-theme">
             <ul id="myMenu">
                 <li data-menuanchor="aboutMe" class="active"><a href="#aboutMe">About Me</a></li>
                 <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
