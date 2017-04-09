@@ -3,20 +3,21 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio.Doc</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio.Doc</title>
 
-    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cairo'>
-    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel="stylesheet prefetch" href="https://code.getmdl.io/1.2.1/material.grey-orange.min.css">
-    <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <link rel='stylesheet' type='text/css' href='css/jquery.pagepiling.css'>
-    <script type='text/javascript' src='js/jquery-3.1.1.min.js'></script>
-    <script type='text/javascript' src='js/jquery.pagepiling.js'></script>
-    <script type='text/javascript' src='js/script.js'></script>
-    <script defer type="text/javascript" src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-    <script type="text/javascript" src="js/typed.js"></script>
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cairo'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel="stylesheet prefetch" href="https://code.getmdl.io/1.2.1/material.grey-orange.min.css">
+  <link rel='stylesheet' type='text/css' href='css/style.css'>
+  <link rel='stylesheet' type='text/css' href='css/jquery.pagepiling.css'>
+  <script type='text/javascript' src='js/jquery-3.1.1.min.js'></script>
+  <script type='text/javascript' src='js/jquery.pagepiling.js'></script>
+  <script type='text/javascript' src='js/script.js'></script>
+  <script defer type="text/javascript" src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <script type="text/javascript" src="js/typed.js"></script>
 </head>
 
 <body>
@@ -47,7 +48,7 @@
 
     <div id='pagepiling' class="text-theme">
         <div class='section'>
-            <div class="mdl-grid">
+            <div class="mdl-grid typed-text">
                 <div class="mdl-layout-spacer">
                 </div>
                 <div class="mdl-cell mdl-cell--12-col-phone mdl-cell--8-col-desktop text-center">
@@ -60,21 +61,38 @@
                 <div class="mdl-layout-spacer">
                 </div>
                 <div class="mdl-cell mdl-cell--12-col-phone mdl-cell--2-col-desktop">
-                  <img class="profile-pic" src="images/profile.png">
+                  <img class="profile-pic" src="images/profile.png" alt="A photo of me!">
                 </div>
                 <div class="mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-desktop text-center about-me-text">
                     <p class="main-text">
-                        Hi, I'm Dan, a junior web developer from the rainy city versed in HTML, CSS, Javascript, and Sass, as well as Bootstrap and other front-end frameworks. Currently learning React! Scroll down to see some examples of my work. Feel free to contact me with any questions!
+                        Hi, I'm Dan, a junior web developer from the rainy city versed in HTML, CSS, Javascript, and Sass,
+                        as well as Bootstrap and other front-end frameworks. Currently learning React! Scroll down to see
+                        some examples of my work. Feel free to contact me with any questions! I'd love to hear about any
+                        openings you might have, or just talk code! Drop me a line at <a id="emailLink" class="text-link"><span id="emailName"></span><span id="emailDomain"></span></a>.
                     </p>
                 </div>
                 <div class="mdl-layout-spacer">
                 </div>
+            </div>
+            <div class="to-fit">
+
             </div>
         </div>
         <div class='section pp-scrollable container'>
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--12-col top-fit text-center">
                     <h2 class="text-theme">Some examples of my work:</h2>
+                </div>
+                <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop mdl-shadow--2dp">
+                    <div class="mdl-card__media container">
+                        <a href="http://codepen.io/djs113/pen/QGYjQV" target="_blank"><img src="images/calculate.png" alt="" /></a>
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text"><a href="http://codepen.io/djs113/pen/oYxZLa/" target="_blank" class="text-link">Calculate</a></h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        A simple javascript calculator.  Uses the module design pattern to emulate private variables.
+                    </div>
                 </div>
                 <div class="card-twitch mdl-card mdl-cell mdl-cell--12-col-phone mdl-cell--6-col-tablet mdl-cell--4-col-desktop mdl-shadow--2dp">
                     <div class="mdl-card__media container">
@@ -113,23 +131,18 @@
                 </div>
             </div>
         </div>
-        <div class='section'>
+        <!-- <div class='section'>
             <p>
-                Contact information goes here
+                I'd love to hear about any openings you might have, or just talk code! Drop me a line at <a id="emailLink"><span id="emailName"></span><span id="emailDomain"></span></a>
             </p>
-        </div>
+        </div> -->
     </div>
     <div class="mdl-grid">
-        <div class="mdl-layout-spacer">
-        </div>
-        <div class="mdl-cell mdl-cell--3-col text-theme">
+        <div class="mdl-cell mdl-cell--10-col text-theme container">
             <ul id="myMenu">
                 <li data-menuanchor="aboutMe" class="active"><a href="#aboutMe">About Me</a></li>
                 <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
-                <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-        <div class="mdl-layout-spacer">
         </div>
     </div>
 </body>
