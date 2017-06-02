@@ -155,4 +155,7 @@ a {
 }
 .typed-text {
   max-height: 200px;
+  background-color: black;
+  color: #ff9900;
+
 }

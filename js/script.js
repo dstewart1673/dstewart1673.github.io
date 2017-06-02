@@ -9,7 +9,7 @@ $(document).ready(function() {
     verticalCentered: true,
     sectionsColor: ["#ff9900", "#b3b3b3"],
     anchors: ["aboutMe", "projects"],
-    menu: '#myMenu',
+    menu: 'myMenu',
     navigation: false,
     touchSensitivity: 13
   });
